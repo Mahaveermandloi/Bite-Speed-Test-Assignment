@@ -1,0 +1,169 @@
+   {/* <div className="overflow-x-auto">
+          <table className="min-w-full bg-white border border-gray-200">
+            <thead>
+              <tr>
+                <th className="px-4 py-2 w-1/2 border">Field</th>
+                <th className="px-4 py-2 w-1/2 border">Value</th>
+              </tr>
+            </thead>
+            <tbody>
+             
+
+              <tr className="bg-gray-100">
+                <td className="px-4 py-2 border font-semibold uppercase text-gray-500">
+                  Student Profile Image
+                </td>
+                <td className="px-4 py-2 border">
+                  <img
+                    src={`${SERVER_URL}${studentData.student_profile_image}`}
+                    alt="Student Profile"
+                    className="w-32 h-32 object-cover"
+                  />
+                </td>
+              </tr>
+              <tr className="bg-gray-100">
+                <td className="px-4 py-2 border font-semibold uppercase text-gray-500">
+                  Student CV
+                </td>
+                <td className="px-4 py-2 border">
+                  <a
+                    href={`${SERVER_URL}${studentData.student_cv}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 underline"
+                  >
+                    STUDENT CV / RESUME
+                  </a>
+                </td>
+              </tr>
+              <tr className="bg-white">
+                <td className="px-4 py-2 border font-semibold uppercase text-gray-500">
+                  Student Marksheet SEM I
+                </td>
+                <td className="px-4 py-2 border">
+                  <a
+                    href={`${SERVER_URL}${studentData.student_marksheet_sem_1}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 underline"
+                  >
+                    SEM I MARKSHEET
+                  </a>
+                </td>
+              </tr>
+              <tr className="bg-gray-100">
+                <td className="px-4 py-2 border font-semibold uppercase text-gray-500">
+                  Student Marksheet SEM II
+                </td>
+                <td className="px-4 py-2 border">
+                  <a
+                    href={`${SERVER_URL}${studentData.student_marksheet_sem_2}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 underline"
+                  >
+                    SEM II MARKSHEET
+                  </a>
+                </td>
+              </tr>
+              <tr className="bg-white">
+                <td className="px-4 py-2 border font-semibold uppercase text-gray-500">
+                  Student Marksheet SEM III
+                </td>
+                <td className="px-4 py-2 border">
+                  <a
+                    href={`${SERVER_URL}${studentData.student_marksheet_sem_3}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 underline"
+                  >
+                    SEM III MARKSHEET
+                  </a>
+                </td>
+              </tr>
+              <tr className="bg-gray-100">
+                <td className="px-4 py-2 border font-semibold uppercase text-gray-500">
+                  Student Marksheet SEM IV
+                </td>
+                <td className="px-4 py-2 border">
+                  <a
+                    href={`${SERVER_URL}${studentData.student_marksheet_sem_4}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 underline"
+                  >
+                    SEM IV MARKSHEET
+                  </a>
+                </td>
+              </tr>
+              <tr className="bg-white">
+                <td className="px-4 py-2 border font-semibold uppercase text-gray-500">
+                  Student Marksheet SEM V
+                </td>
+                <td className="px-4 py-2 border">
+                  <a
+                    href={`${SERVER_URL}${studentData.student_marksheet_sem_5}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 underline"
+                  >
+                    SEM V MARKSHEET
+                  </a>
+                </td>
+              </tr>
+              <tr className="bg-gray-100">
+                <td className="px-4 py-2 border font-semibold uppercase text-gray-500">
+                  Student Marksheet SEM VI
+                </td>
+                <td className="px-4 py-2 border">
+                  <a
+                    href={`${SERVER_URL}${studentData.student_marksheet_sem_6}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 underline"
+                  >
+                    SEM VI MARKSHEET
+                  </a>
+                </td>
+              </tr>
+              <tr className="bg-white">
+                <td className="px-4 py-2 border font-semibold uppercase text-gray-500">
+                  Student Mobile No
+                </td>
+                <td className="px-4 py-2 border">
+                  {studentData.student_mobile_no}
+                </td>
+              </tr>
+
+            
+              {Object.entries(studentData)
+                .filter(
+                  ([key]) =>
+                    ![
+                      "student_cv",
+                      "student_marksheet_sem_1",
+                      "student_marksheet_sem_2",
+                      "student_marksheet_sem_3",
+                      "student_marksheet_sem_4",
+                      "student_marksheet_sem_5",
+                      "student_marksheet_sem_6",
+                      "student_mobile_no",
+                      "student_profile_image",
+                    ].includes(key)
+                )
+                .map(([key, value], index) => (
+                  <tr
+                    key={key}
+                    className={`${
+                      index % 2 === 0 ? "bg-gray-100" : "bg-white"
+                    }`}
+                  >
+                    <td className="px-4 py-2 border font-semibold uppercase text-gray-500">
+                      {key.replace(/_/g, " ")}
+                    </td>
+                    <td className="px-4 py-2 border">{String(value)}</td>
+                  </tr>
+                ))}
+            </tbody>
+          </table>
+        </div> */}
