@@ -1,4 +1,4 @@
-import Contact from "../models/Contact.js";
+import Contact from "../models/contact.js";
 import { Op } from "sequelize";
 
 export const identifyContact = async (req, res) => {
